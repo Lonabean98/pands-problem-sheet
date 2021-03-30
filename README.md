@@ -156,10 +156,21 @@ plt.show()
 
 
 Explanation:
+1. numpy and matplotlib.pyplot are imported.
+2. linspace returns evenly spaced numbers over a specified interval, in this case 0 to 4. Reference: https://numpy.org/doc/stable/reference/generated/numpy.linspace.html
+3. naming the label for each function.
+4. added second line. 2 is superscripted to create 2 squared. Reference: https://stackoverflow.com/questions/21226868/superscript-in-python-plots
+5. Added third line. 3 is superscripted. 
+6. Placed a legend in the upper left hand corner of the plot. Reference: https://stackoverflow.com/questions/19125722/adding-a-
+legend-to-pyplot-in-matplotlib-in-the-simplest-manner-possible
 
+7. Added title to plot. 
+8. Added grid. 
+9. Show or save figure. 
 
 I got the code for the day of the week from https://stackoverflow.com/questions/8380389/how-to-get-day-name-from-datetime
 
+References:
 
 squareroot.py:
 This program takes an input and outputs the square root using Newtons approximation method.
