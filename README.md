@@ -2,10 +2,9 @@
 Introduction
 This readme file explains the code in each of the weekly tasks for the Programming and Scripting module for Data Analytics 2021
 
-
 ##TASK 2:
 bmi.py:
-This takes an input of height in cm and weight in kg and calculates the BMI
+This takes an input of height in cm and weight in kg and calculates the BMI.
 
 ###Code: 
 weight = int(input("enter weight (kg):")) 
@@ -44,13 +43,11 @@ while number!=1:
       numbers.append(number)
 print(numbers)
 
-
 ###Explanation:
-1. Numbers is an empty list
-2. User is asked to input a positive integer. This input is then appended to the numbers lsit.
+1. Numbers is an empty list.
+2. User is asked to input a positive integer. This input is then appended to the numbers list.
 3. For any input other than 1, if the remainder of the input divided by 2 is 0, it is divided by two and appended to the list. If the remainder divided by 2 is not 0, the number is multiplied by 3 and 1 is added. This is also appended to the list.
 4. The "numbers" list is printed.
-
 
 ##TASK 5:
 Write a program that outputs whether or not today is a weekday.
@@ -64,13 +61,11 @@ if (today.strftime("%A")) in weekend:
 else:
     print("Yes, unfortunately today is a weekday")
 
-
 ###Explanation:
-1.datetime module is imported as "dt".
-2.datetime.now() retrieves the current date and time and is given the variable "today". 
-3.strftime() formats the date object as a readable string. If the current date is in the "weekend" list, it will print "It is the weekend, yay!".
-4. If not, it will print "Yes, unfortunately today is a weekday" Reference: https://stackoverflow.com/questions/8380389/how-to-get-day-name-from-datetime
-
+1. datetime module is imported as "dt".
+2. datetime.now() retrieves the current date and time and is given the variable "today". 
+3. strftime() formats the date object as a readable string. If the current date is in the "weekend" list, it will print "It is the weekend, yay!".
+4. If not, it will print "Yes, unfortunately today is a weekday" (Joiner, 2011) 
 
 ##TASK 6:
 Write a program that takes a positive floating-point number as input and outputs an approximation of its square root.
@@ -103,7 +98,6 @@ print("The square root of {} is approx" .format(x), round(sqrt(x), 1))
 11. Results of sqrt function is printed rounded to 1 decimal place.
 
 
-
 ##TASK 7:
 Write a program that reads in a text file and outputs the number of e's it contains.
 
@@ -119,14 +113,13 @@ with open(filename) as f:
     print(e_count)
 
 ###Explanation:
-1. The sys module provides functions and variables used to manipulate different parts of the Python runtime environment. Reference: https://docs.python.org/3/library/sys.html
-2. sys.argv returns a list of command line arguments passed to a Python script. https://www.tutorialsteacher.com/python/sys-module.
+1. The sys module provides functions and variables used to manipulate different parts of the Python runtime environment. (sys — System-specific parameters and functions, n.d.) 
+2. sys.argv returns a list of command line arguments passed to a Python script.
 3. opening the argument as f.
 4. The text in the file is read into a string.
 5. The starting point of "e_count" is 0.
 6. Looping through each character in the text. If the letter is "e", 1 will be added to the e_count variable. 
 7. Final e_count is printed.
-
 
 ##TASK 8:
 Write a program called plottask.py that displays a plot of the functions f(x)=x, g(x)=x2 and h(x)=x3 in the range [0, 4] on the one set of axes.
@@ -154,33 +147,30 @@ plt.title("plottask.py")
 plt.grid()
 plt.show()
 
-
 ###Explanation:
 1. numpy and matplotlib.pyplot are imported.
-2. linspace returns evenly spaced numbers over a specified interval, in this case 0 to 4. Reference: https://numpy.org/doc/stable/reference/generated/numpy.linspace.html
+2. linspace returns evenly spaced numbers over a specified interval, in this case 0 to 4. (numpy.linspace, 2021)
 3. naming the label for each function.
-4. added second line. 2 is superscripted to create 2 squared. Reference: https://stackoverflow.com/questions/21226868/superscript-in-python-plots
+4. added second line. 2 is superscripted to create 2 squared. (Superscript in Python plots, 2014) 
 5. Added third line. 3 is superscripted. 
-6. Placed a legend in the upper left hand corner of the plot. Reference: https://stackoverflow.com/questions/19125722/adding-a-
-legend-to-pyplot-in-matplotlib-in-the-simplest-manner-possible
-
+6. Placed a legend in the upper left hand corner of the plot. (Adding a legend to PyPlot in Matplotlib in the simplest manner possible, 2020) 
 7. Added title to plot. 
 8. Added grid. 
 9. Show or save figure. 
 
-I got the code for the day of the week from https://stackoverflow.com/questions/8380389/how-to-get-day-name-from-datetime
-
 References:
 
-squareroot.py:
-This program takes an input and outputs the square root using Newtons approximation method.
-I referenced the code from https://stackoverflow.com/questions/55232484/newtons-method-for-approximating-square-roots in this program
+Adding a legend to PyPlot in Matplotlib in the simplest manner possible. (2020, February 4). Retrieved from stackoverflow.com: https://stackoverflow.com/questions/19125722/adding-a-legend-to-pyplot-in-matplotlib-in-the-simplest-manner-possible
 
-es.py:
-I found out the method to take an argument from a filename from https://www.tutorialsteacher.com/python/sys-module. I tested that this worked by downloading a different txt file from the internet and inputting their names as an argument, which worked.
+Hatterer, R. (2020, July 29). datasets.load_iris() in Python. Retrieved from Stackoverflow: https://stackoverflow.com/questions/43159754/datasets-load-iris-in-python
 
-plottask.py:
-This program displays a plot of the functions f(x)=x, g(x)=x2 and h(x)=x3 in the range [0, 4] on the one set of axes. I got the code to place a legend from: https://stackoverflow.com/questions/19125722/adding-a-
-legend-to-pyplot-in-matplotlib-in-the-simplest-manner-possible
+Joiner, M. (2011, December 5). How to get day name from datetime. Retrieved from Stackoverflow: https://stackoverflow.com/questions/8380389/how-to-get-day-name-from-datetime
 
-I got to code to superscript number from: https://stackoverflow.com/questions/21226868/superscript-in-python-plots
+numpy.linspace. (2021, January 31). Retrieved from numpy.org: https://numpy.org/doc/stable/reference/generated/numpy.linspace.html
+
+Superscript in Python plots. (2014, January 20). Retrieved from stackoverflow.com: https://stackoverflow.com/questions/21226868/superscript-in-python-plots
+
+sys — System-specific parameters and functions. (n.d.). Retrieved from docs.python.org: https://docs.python.org/3/library/sys.html
+
+
+
