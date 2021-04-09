@@ -28,12 +28,16 @@ plt.plot(x3, y3, label= "h(x)= $x^3$")
 
 plt.xlabel("x")
 plt.ylabel("y")
+
 #this places the legend on the upper left of the plot
 plt.legend(loc="upper left")
+
 #giving title to plot
 plt.title("plottask.py")
+
 #adding grid
 plt.grid()
+
 #show plot
 plt.show()
 

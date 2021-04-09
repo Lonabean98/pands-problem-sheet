@@ -1,4 +1,4 @@
-#This program eads in a text 
+#This program reads in a text 
 #file and outputs the number of e's it contains.
 #It can also take the filename from an argument on the command line.
 #Author: Lonan Keane

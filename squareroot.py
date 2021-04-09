@@ -1,7 +1,7 @@
 #This program takes an input and outputs an approximation of its square root
 #Author: Lonan Keane
 
-#x is you input, converted to a float
+#x is the input, converted to a float
 x = float(input("Please enter a positive number: "))  
 
 #defining sqrt function
@@ -12,7 +12,7 @@ def sqrt(x):
    #The estimation is formatted as half of the input value
    guess = x/2
    #This statement will loop indefinitely until 
-   # the break condition is met
+   # the return condition is met
    while True:
         #This changes the value of guess to the result of the Newton
         #equation
