@@ -6,11 +6,8 @@ This readme file explains the code in each of the weekly tasks for the Programmi
 Write a program that calculates somebody's Body Mass Index (BMI). Call the file bmi.py
 
 ### Code: 
-weight = int(input("enter weight (kg):")) 
-height = int(input('enter height (cm):'))
-conversion= (height/100)**2
-BMI = (weight/conversion)
-print("BMI is :{:.2f}".format(BMI))
+![image](https://user-images.githubusercontent.com/77697552/114286405-4a56ce80-9a56-11eb-9898-dc9df59ce3b7.png)
+
 
 ### Explanation:
 User is prompted to enter the weight and height. Both of these inputs are converted to integers. The variable "conversion" divides the height by 100 and multiplies this answer by 2. The BMI is calculated by dividing the weight by the conversion variable. The BMI value is then printed to 2 decimal places. 
@@ -19,9 +16,8 @@ User is prompted to enter the weight and height. Both of these inputs are conver
 Write a program that asks a user to input a string and outputs every second letter in reverse order.
 
 ### Code:
-firstSentence = str(input("please enter a sentence:")) 
-output = (firstSentence[::-2]) 
-print(output)   
+![image](https://user-images.githubusercontent.com/77697552/114286426-868a2f00-9a56-11eb-9ca3-6290207a568d.png)
+
 
 ### Explanation:
 The user is asked to enter a string, which is stored in the "firstSentence" variable. The reverse slice function is then used to take out every second letter. 
@@ -30,17 +26,7 @@ The user is asked to enter a string, which is stored in the "firstSentence" vari
 Write a program that asks the user to input any positive integer and outputs the successive values of the following calculation. At each step calculate the next value by taking the current value and, if it is even, divide it by two, but if it is odd, multiply it by three and add one. Have the program end if the current value is one.
 
 ### Code: 
-numbers= []
-number= int(input("please enter a positive integer: "))
-numbers.append(number)
-while number!=1:
-   if number%2==0:
-      number//=2 
-      numbers.append(number)
-   else:
-      number= int((number*3)+1)
-      numbers.append(number)
-print(numbers)
+![image](https://user-images.githubusercontent.com/77697552/114286443-ad486580-9a56-11eb-97ef-8febcfc4f71d.png)
 
 ### Explanation:
 1. Numbers is an empty list.
@@ -52,13 +38,7 @@ print(numbers)
 Write a program that outputs whether or not today is a weekday.
 
 ### Code: 
-import datetime as dt
-today = dt.datetime.now()
-weekend= ["Saturday", "Sunday"]
-if (today.strftime("%A")) in weekend:
-    print("It is the weekend, yay!")
-else:
-    print("Yes, unfortunately today is a weekday")
+![image](https://user-images.githubusercontent.com/77697552/114286451-c8b37080-9a56-11eb-9814-0382cf90f276.png)
 
 ### Explanation:
 1. datetime module is imported as "dt".
@@ -70,18 +50,8 @@ else:
 Write a program that takes a positive floating-point number as input and outputs an approximation of its square root.
 
 ### Code:
-x = float(input("Please enter a positive number: "))  
-def sqrt(x):
-   tolerance = 0.000001
-   guess = x/2
-   while True:
-        guess = (guess + x / guess) / 2
-        difference = abs(x - guess ** 2)
-        if difference <= tolerance:
-            break
-   return guess
-sqrt(x)
-print("The square root of {} is approx" .format(x), round(sqrt(x), 1))
+![image](https://user-images.githubusercontent.com/77697552/114286462-dd900400-9a56-11eb-92e1-17d9a3d607eb.png)
+
 
 ### Explanation:
 1. Asks the user to input a positive integer.
@@ -101,15 +71,8 @@ print("The square root of {} is approx" .format(x), round(sqrt(x), 1))
 Write a program that reads in a text file and outputs the number of e's it contains.
 
 ### Code:
-import sys
-filename= sys.argv[1]
-with open(filename) as f:
-    x=f.read()
-    e_count= 0
-    for letter in x:
-       if letter =='e' or letter== 'E':
-        e_count += 1
-    print(e_count)
+![image](https://user-images.githubusercontent.com/77697552/114286476-ef71a700-9a56-11eb-9d93-0f97289c77e8.png)
+
 
 ### Explanation:
 1. The sys module provides functions and variables used to manipulate different parts of the Python runtime environment. (sys — System-specific parameters and functions, n.d.) 
@@ -124,27 +87,8 @@ with open(filename) as f:
 Write a program called plottask.py that displays a plot of the functions f(x)=x, g(x)=x2 and h(x)=x3 in the range [0, 4] on the one set of axes.
 
 ### Code: 
-import numpy as np
-import matplotlib.pyplot as plt
+![image](https://user-images.githubusercontent.com/77697552/114286489-0d3f0c00-9a57-11eb-956f-c22e457940f7.png)
 
-x = np.linspace(0,4)
-y=  x
-plt.plot(x,y, label= "f(x)= x")
-
-x2= np.linspace(0,4)
-y2= x2**2
-plt.plot(x2,y2, label= "g(x)= $x^2$")
-
-x3= np.linspace(0,4)
-y3= x3 **3
-plt.plot(x3, y3, label= "h(x)= $x^3$")
-
-plt.xlabel("x")
-plt.ylabel("y")
-plt.legend(loc="upper left")
-plt.title("plottask.py")
-plt.grid()
-plt.show()
 
 ### Explanation:
 1. numpy and matplotlib.pyplot are imported.
