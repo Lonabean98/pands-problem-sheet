@@ -87,7 +87,8 @@ Write a program that reads in a text file and outputs the number of e's it conta
 Write a program called plottask.py that displays a plot of the functions f(x)=x, g(x)=x2 and h(x)=x3 in the range [0, 4] on the one set of axes.
 
 ### Code: 
-![image](https://user-images.githubusercontent.com/77697552/114286489-0d3f0c00-9a57-11eb-956f-c22e457940f7.png)
+![image](https://user-images.githubusercontent.com/77697552/115076636-bfae1d80-9ef4-11eb-866c-c445c2713c0c.png)
+
 
 
 ### Explanation:
